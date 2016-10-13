@@ -5,7 +5,15 @@ import javafx.beans.property.IntegerProperty;
 public class Season {
 	private IntegerProperty id;
 	private IntegerProperty number;
-	private IntegerProperty idSeries;
+	private Series series;
+	
+	public Season() {}
+	
+	public Season(int id, int number, Series series) {
+		this.id.set(id);
+		this.number.set(number);
+		this.series = series;
+	}
 	
 	public int getId() {
 		return id.get();
@@ -30,16 +38,12 @@ public class Season {
 	public void setNumber(int number) {
 		this.number.set(number);
 	}
-	
-	public int getIdSeries() {
-		return idSeries.get();
+
+	public Series getSeries() {
+		return series;
 	}
-	
-	public IntegerProperty getIdSeriesProperty() {
-		return idSeries;
-	}
-	
-	public void setIdSeries(int idSeries) {
-		this.idSeries.set(idSeries);
+
+	public void setSeries(Series series) {
+		this.series = series;
 	}
 }
