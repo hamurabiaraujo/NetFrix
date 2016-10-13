@@ -9,8 +9,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="400.0" maxWidth="300.0" minHeight="400.0" minWidth="300.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #000;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65">
+<AnchorPane maxHeight="400.0" maxWidth="300.0" minHeight="400.0" minWidth="300.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TextField layoutX="12.0" layoutY="10.0" opacity="0.0" prefHeight="34.0" prefWidth="200.0" promptText="trick focus" style="-fx-background-color: #0a0a0a; -fx-border-color: #222;">
          <font>
@@ -34,7 +33,7 @@
       </Button>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../resources/images/logo.png" />
+            <Image url="@../../../../../../resources/images/logo.png" />
          </image>
       </ImageView>
       <Line endX="100.0" layoutX="150.0" layoutY="142.0" startX="-100.0" stroke="#323232" />
