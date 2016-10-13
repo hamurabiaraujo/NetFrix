@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -9,24 +10,24 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="400.0" maxWidth="300.0" minHeight="400.0" minWidth="300.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="400.0" maxWidth="300.0" minHeight="400.0" minWidth="300.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrn.imd.netfrix.view.LoginViewController">
    <children>
       <TextField layoutX="12.0" layoutY="10.0" opacity="0.0" prefHeight="34.0" prefWidth="200.0" promptText="trick focus" style="-fx-background-color: #0a0a0a; -fx-border-color: #222;">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField layoutX="50.0" layoutY="176.0" prefHeight="34.0" prefWidth="200.0" promptText="E-mail" style="-fx-background-color: #0a0a0a; -fx-border-color: #222;">
+      <TextField fx:id="txtEmail" layoutX="50.0" layoutY="176.0" prefHeight="34.0" prefWidth="200.0" promptText="E-mail" style="-fx-background-color: #0a0a0a; -fx-border-color: #222;">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <PasswordField layoutX="50.0" layoutY="219.0" prefHeight="34.0" prefWidth="200.0" promptText="Senha" style="-fx-background-color: #0a0a0a; -fx-border-color: #222;">
+      <PasswordField fx:id="txtPassword" layoutX="50.0" layoutY="219.0" prefHeight="34.0" prefWidth="200.0" promptText="Senha" style="-fx-background-color: #0a0a0a; -fx-border-color: #222;">
          <font>
             <Font size="14.0" />
          </font>
       </PasswordField>
-      <Button layoutX="100.0" layoutY="275.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #e50914;" text="Entrar" textFill="WHITE">
+      <Button fx:id="btnLogin" layoutX="100.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleLoginClick" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #e50914;" text="Entrar" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
@@ -37,5 +38,6 @@
          </image>
       </ImageView>
       <Line endX="100.0" layoutX="150.0" layoutY="142.0" startX="-100.0" stroke="#323232" />
+      <Label fx:id="loginMsgError" layoutX="50.0" layoutY="344.0" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" textFill="#dd1717" />
    </children>
 </AnchorPane>
