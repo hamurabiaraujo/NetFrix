@@ -1,4 +1,4 @@
-package br.ufrn.imd.util;
+package br.ufrn.imd.netfrix.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

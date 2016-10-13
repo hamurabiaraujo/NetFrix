@@ -1,4 +1,4 @@
-package br.ufrn.imd.model;
+package br.ufrn.imd.netfrix.model;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.StringProperty;

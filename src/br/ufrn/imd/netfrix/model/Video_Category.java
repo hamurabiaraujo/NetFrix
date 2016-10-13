@@ -1,4 +1,4 @@
-package br.ufrn.imd.model;
+package br.ufrn.imd.netfrix.model;
 
 public class Video_Category {
 	private Video video;
