@@ -7,6 +7,13 @@ public class Series {
 	private IntegerProperty id;
 	private StringProperty 	name;
 	
+	public Series() {}
+	
+	public Series(int id, String name) {
+		this.id.set(id);
+		this.name.set(name);
+	}
+	
 	public int getId() {
 		return id.get();
 	}
