@@ -36,7 +36,7 @@ public class LoginViewController {
 	}
 	
 	public void tryLogin(String email, String password) throws SQLException, ClassNotFoundException {
-		String query = "SELECT id FROM users WHERE email = '" + email + "' AND password = '" + password;
+		String query = "SELECT id FROM users WHERE email = '" + email + "' AND password = '" + password + "'";
 		
 		try {
 			ResultSet result = DataBase.dbExecuteQuery(query);
