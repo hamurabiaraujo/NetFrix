@@ -22,7 +22,7 @@ public class DataBase {
  
     //Connect to DB
     public static void dbConnect() throws SQLException, ClassNotFoundException {
-        //Setting Oracle JDBC Driver
+        //Setting JDBC Driver
         try {
             Class.forName(JDBC_DRIVER);
         } catch (ClassNotFoundException e) {
@@ -33,7 +33,7 @@ public class DataBase {
  
         System.out.println("Oracle JDBC Driver Registered!");
  
-        //Establish the Oracle Connection using Connection String
+        //Establish the Connection using Connection String
         try {
             conn = DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
@@ -61,7 +61,7 @@ public class DataBase {
         ResultSet resultSet = null;
         CachedRowSetImpl crs = null;
         try {
-            //Connect to DB (Establish Oracle Connection)
+            //Connect to DB (Establish Connection)
             dbConnect();
             System.out.println("Select statement: " + queryStmt + "\n");
  
@@ -100,7 +100,7 @@ public class DataBase {
         //Declare statement as null
         Statement stmt = null;
         try {
-            //Connect to DB (Establish Oracle Connection)
+            //Connect to DB (Establish Connection)
             dbConnect();
             //Create Statement
             stmt = conn.createStatement();
