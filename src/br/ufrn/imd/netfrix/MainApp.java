@@ -12,9 +12,9 @@ public class MainApp extends Application {
 
 	@Override
 	public void start(Stage primaryStage) {
-		this.primaryStage = primaryStage;
-		this.primaryStage.setResizable(false);
-        this.primaryStage.setTitle("Netfrix");
+		MainApp.primaryStage = primaryStage;
+		MainApp.primaryStage.setResizable(false);
+        MainApp.primaryStage.setTitle("Netfrix");
 
         showLogin();
 	}
