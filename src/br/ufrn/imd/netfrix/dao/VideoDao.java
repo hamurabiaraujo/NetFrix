@@ -31,13 +31,16 @@ public class VideoDao {
 			video.setDirector(rs.getString("director"));
 			video.setDuration(rs.getInt("duration"));
 			video.setEpisode(rs.getInt("episode"));
-			video.setSeason(new Season().setId(rs.getInt("id_season")));
+			video.setSeason(new Season());
 			video.setImage(rs.getString("image"));
 			video.setMainActor(rs.getString("main_actor"));
 			video.setMinAge(rs.getInt("min_age"));
 			video.setName(rs.getString("name"));
 			video.setRegistrationDate(rs.getDate("registration_date"));
 			video.setYear(rs.getInt("year"));
+			
+//			video.setSeason(video.getSeason().setId(new Integer(rs.getString("id_season"))));
+			// TODO set the season object
 		}
 		return video;
 	}

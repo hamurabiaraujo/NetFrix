@@ -43,8 +43,10 @@ public class Video {
 		this.minAge			= new SimpleIntegerProperty(minAge);
 		this.year			= new SimpleIntegerProperty(year);
 		this.duration		= new SimpleIntegerProperty(duration);
-		this.idSeason		= new SimpleIntegerProperty(idSeason);
+		this.season			= new Season();
 		this.episode		= new SimpleIntegerProperty(episode);
+		
+		this.season.setId(idSeason);
 	}
 
 	public int getId() {
