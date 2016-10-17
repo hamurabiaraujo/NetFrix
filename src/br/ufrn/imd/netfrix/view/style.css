@@ -1,0 +1,24 @@
+/* DEFAULT ELEMENTS STYLE */
+.background {
+	-fx-background-color: #000;
+	-fx-font-size: 14px;
+}
+
+.label {
+	-fx-text-fill: #fff;
+}
+
+.button {
+	-fx-background-color: #e50914;	
+	-fx-text-fill: #fff;
+}
+
+.text-field, .text-area {
+	-fx-background-color: #0a0a0a;
+	-fx-border-color: #222;
+}
+
+/* TEMPLATE */
+.header {
+	-fx-font-size: 24px;
+}
