@@ -19,7 +19,7 @@ public class Video {
 	private IntegerProperty			minAge;
 	private ObjectProperty<Date> 	registrationDate;
 	private StringProperty			image;
-	private IntegerProperty			idSeason;
+	private Season					season;
 	private IntegerProperty			episode;
 	
 	public Video() {}
@@ -167,16 +167,12 @@ public class Video {
 		this.image.set(image);
 	}
 	
-	public int getIdSeason() {
-		return idSeason.get();
+	public void setSeason(Season season) {
+		this.season = season;
 	}
-
-	public IntegerProperty getIdSeasonProperty() {
-		return idSeason;
-	}
-
-	public void setIdSeason(int idSeason) {
-		this.idSeason.set(idSeason);
+	
+	public Season getSeason() {
+		return season;
 	}
 	
 	public int getEpisode() {
