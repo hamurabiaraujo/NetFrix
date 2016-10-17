@@ -33,6 +33,6 @@
          </image>
       </ImageView>
       <Line endX="100.0" layoutX="150.0" layoutY="142.0" startX="-100.0" stroke="#323232" />
-      <Label fx:id="loginMsgError" layoutX="50.0" layoutY="344.0" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" textFill="#dd1717" />
+      <Label fx:id="loginMsgError" layoutX="59.0" layoutY="341.0" maxWidth="200.0" minWidth="182.0" prefHeight="16.0" prefWidth="182.0" textFill="#dd1717" />
    </children>
 </AnchorPane>

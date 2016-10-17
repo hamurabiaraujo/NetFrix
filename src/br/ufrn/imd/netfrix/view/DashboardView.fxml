@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #000;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65">
+   <children>
+      <BorderPane layoutX="2.0" layoutY="1.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
+               <image>
+                  <Image url="@../../../../../../resources/images/logo.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets left="25.0" top="25.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </top>
+         <center>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Login realizado com sucesso" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

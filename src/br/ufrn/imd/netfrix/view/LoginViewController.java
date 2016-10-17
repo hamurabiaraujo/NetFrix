@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class LoginViewController {
 
@@ -21,8 +22,6 @@ public class LoginViewController {
 	@FXML
 	private Label loginMsgError;
 	
-	private MainApp mainApp;
-	
 	public LoginViewController() {
 	}
 	
@@ -30,8 +29,6 @@ public class LoginViewController {
 	private void handleLoginClick() throws ClassNotFoundException, SQLException {
 	    String email =  this.txtEmail.getText();
 	    String password = this.txtPassword.getText();
-	    System.out.println(email);
-	    System.out.println(password);
 	    tryLogin(email, password);
 	}
 	
@@ -42,7 +39,12 @@ public class LoginViewController {
 			ResultSet result = DataBase.dbExecuteQuery(query);
 			
 			if (result.next()) {
-				loginMsgError.setText("Login feito com sucesso!");
+				try {
+					new DashboardViewController().start(new Stage());
+					MainApp.primaryStage.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			} else {
 				loginMsgError.setText("Ops, informações erradas");
 			}
@@ -52,9 +54,4 @@ public class LoginViewController {
             throw e;
         }
 	}
-
-	public void setMainApp(MainApp mainApp) {
-		this.mainApp = mainApp;
-	}
-	
 }
