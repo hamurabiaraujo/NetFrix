@@ -54,3 +54,62 @@ CREATE TABLE video_category (
 );
 
 INSERT INTO users ( name, email, password, is_admin ) VALUES ( 'Netfrix Admin', 'admin@netfrix.com.br', '123123123', true );
+INSERT INTO users ( name, email, password, is_admin ) VALUES ( 'John Doe', 'john@doe.com', '123123123', false);
+
+INSERT INTO series (name) VALUES ('Vikings');
+INSERT INTO series (name) VALUES ('Flash');
+INSERT INTO series (name) VALUES ('Arrow');
+INSERT INTO series (name) VALUES ('Two and a half men');
+
+INSERT INTO seasons("number", series_id) VALUES (1, 1);
+INSERT INTO seasons("number", series_id) VALUES (2, 1);
+INSERT INTO seasons("number", series_id) VALUES (3, 1);
+INSERT INTO seasons("number", series_id) VALUES (1, 2);
+INSERT INTO seasons("number", series_id) VALUES (1, 3);
+INSERT INTO seasons("number", series_id) VALUES (2, 3);
+INSERT INTO seasons("number", series_id) VALUES (3, 3);
+INSERT INTO seasons("number", series_id) VALUES (4, 3);
+INSERT INTO seasons("number", series_id) VALUES (1, 4);
+INSERT INTO seasons("number", series_id) VALUES (2, 4);
+
+INSERT INTO videos(
+            name, description, year, duration, director, main_actor, 
+            min_age, registration_date, image, season_id, episode)
+    VALUES ('Episodio 1', 'A hist�ria come�a', 2012, 40, 'Charlie Sheen', 'Katy Perry', 
+            12, CURRENT_DATE, '#', 1, 1);
+INSERT INTO videos(
+            name, description, year, duration, director, main_actor, 
+            min_age, registration_date, image, season_id, episode)
+    VALUES ('Episodio 2', 'A hist�ria continua', 2012, 40, 'Charlie Sheen', 'Katy Perry', 
+            12, CURRENT_DATE, '#', 1, 2);
+INSERT INTO videos(
+            name, description, year, duration, director, main_actor, 
+            min_age, registration_date, image, season_id, episode)
+    VALUES ('Episodio 3', 'A hist�ria continua novamente', 2012, 40, 'Charlie Sheen', 'Katy Perry', 
+            12, CURRENT_DATE, '#', 1, 3);
+INSERT INTO videos(
+            name, description, year, duration, director, main_actor, 
+            min_age, registration_date, image, season_id, episode)
+    VALUES ('Apenas mais um de zueira', 'Nesse v�deo o cara cai de cara com a cara no ch�o', 2012, 2, 'Chao Lin', 'Ant�nio Bandeiras', 
+            16, CURRENT_DATE, '#', null, null);
+INSERT INTO videos(
+            name, description, year, duration, director, main_actor, 
+            min_age, registration_date, image, season_id, episode)
+    VALUES ('Frozen', 'Filme legal pra crian�a', 2016, 121, 'Branca de Neve', 'Elza', 
+            0, CURRENT_DATE, '#', null, null);
+
+INSERT INTO categories(name) VALUES ('Humor');
+INSERT INTO categories(name) VALUES ('Terror');
+INSERT INTO categories(name) VALUES ('Suspense');
+INSERT INTO categories(name) VALUES ('Drama');
+INSERT INTO categories(name) VALUES ('Infantil');
+INSERT INTO categories(name) VALUES ('A��o');
+
+INSERT INTO favorite_series (series_id, user_id) VALUES (1, 2);
+INSERT INTO favorite_series (series_id, user_id) VALUES (2, 2);
+
+INSERT INTO favorite_videos (video_id, user_id) VALUES (4, 2);
+INSERT INTO favorite_videos (video_id, user_id) VALUES (5, 2);
+
+INSERT INTO video_category(video_id, category_id) VALUES (4, 1);
+INSERT INTO video_category(video_id, category_id) VALUES (5, 5);
