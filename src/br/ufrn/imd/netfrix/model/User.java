@@ -33,6 +33,18 @@ public class User {
 		this.dateOfBirth = new SimpleObjectProperty<Date>(dateOfBirth);
 	}
 
+	public int getId() {
+		return id.get();
+	}
+
+	public IntegerProperty getIdProperty() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id.set(id);
+	}
+
 	public String getEmail() {
 		return email.get();
 	}
