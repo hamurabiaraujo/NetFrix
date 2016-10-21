@@ -93,7 +93,7 @@ public class User {
 		this.isAdmin.set(isAdmin);
 	}
 	
-	public Date getDateOgBirth() {
+	public Date getDateOfBirth() {
 		return dateOfBirth.get();
 	}
 	
