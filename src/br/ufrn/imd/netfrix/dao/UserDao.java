@@ -40,7 +40,7 @@ public class UserDao {
 		String query = "UPDATE users SET" +
 					   " name = " + user.getName() +
 					   ", email = " + user.getEmail() +
-					   ", date_of_birth = " + user.getDateOgBirth().toString() +
+					   ", date_of_birth = " + new java.sql.Date(user.getDateOfBirth().getTime()) +
 					   ", is_admin = " + user.getIsAdmin() +
 					   ", password = " + user.getPassword() +
 					   " WHERE id = " + user.getId() + ";";
@@ -64,14 +64,14 @@ public class UserDao {
 	}
 	
 	public static void insertUser(User user) throws SQLException, ClassNotFoundException {
-		String query = "INSERT INTO user("
-				+ "email, name, date_of_birth, password, is_admin VALUES ("
-				+ user.getEmail() + ", "
-				+ user.getName() + ", "
-				+ user.getDateOgBirth().toString() + ", "
-				+ user.getPassword() + ", "
+		String query = "INSERT INTO users ("
+				+ "email, name, date_of_birth, password, is_admin) VALUES ("
+				+ "'" + user.getEmail() + "', "
+				+ "'" + user.getName() + "', "
+				+ "'" + new java.sql.Date(user.getDateOfBirth().getTime()) + "', "
+				+ "'" + user.getPassword() + "', "
 				+ user.getIsAdmin() + ");";
-		
+
 		try {
 			DataBase.dbExecuteUpdate(query);
 		} catch (SQLException e) {
