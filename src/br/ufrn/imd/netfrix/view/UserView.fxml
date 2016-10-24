@@ -9,11 +9,10 @@
 
 <AnchorPane maxHeight="400.0" maxWidth="300.0" minHeight="400.0" minWidth="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrn.imd.netfrix.view.UserViewController">
    <children>
-   	  <Button fx:id="closeButton">
       <Label layoutX="43.0" layoutY="22.0" styleClass="header" text="Adicionar Usuário" textAlignment="CENTER" />
       <TextField fx:id="txtName" focusTraversable="false" layoutX="14.0" layoutY="70.0" promptText="Nome do usuário" styleClass="text-field" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
       <TextField fx:id="txtEmail" focusTraversable="false" layoutX="15.0" layoutY="119.0" promptText="E-mail do usuário" styleClass="text-field" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="119.0" />
-      <PasswordField fx:id="txtPasword" focusTraversable="false" layoutX="15.0" layoutY="167.0" promptText="Senha do usuário" styleClass="text-field" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <PasswordField fx:id="txtPassword" focusTraversable="false" layoutX="15.0" layoutY="167.0" promptText="Senha do usuário" styleClass="text-field" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
       <RadioButton fx:id="radioIsAdmin" focusTraversable="false" layoutX="15.0" layoutY="263.0" mnemonicParsing="false" text="Usuário Administrador" textFill="WHITE" />
       <Button fx:id="btnSave" layoutX="218.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleSaveClick" text="Salvar" />
       <TextField fx:id="txtDateOfBirth" layoutX="15.0" layoutY="212.0" promptText="Data de Nascimento" styleClass="text-field" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
