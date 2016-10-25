@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="479.0" prefWidth="400.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="479.0" prefWidth="400.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane layoutX="31.0" layoutY="60.0" prefHeight="313.0" prefWidth="339.0" AnchorPane.bottomAnchor="77.0" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="70.0">
         <columnConstraints>
@@ -51,7 +51,7 @@
             </TextArea>
          </children>
       </GridPane>
-      <ButtonBar layoutX="170.0" layoutY="396.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
+      <ButtonBar layoutX="170.0" layoutY="396.0" prefHeight="40.0" prefWidth="250.0" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0">
         <buttons>
           <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="101.0" text="Cadastrar" />
             <Button mnemonicParsing="false" text="Cancelar " />
