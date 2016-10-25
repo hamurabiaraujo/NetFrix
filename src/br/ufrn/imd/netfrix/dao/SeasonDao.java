@@ -20,15 +20,15 @@ public class SeasonDao {
 		}
 	}
 	
-	private static Season getSeasonFromResultSet(ResultSet rs) throws SQLException {
+	private static Season getSeasonFromResultSet(ResultSet rs) throws SQLException, ClassNotFoundException {
 		Season season = null;
+		SeriesDao seriesDao = new SeriesDao();
 		
 		if(rs.next()) {
 			season = new Season();
 			season.setId(rs.getInt("id"));
 			season.setNumber(rs.getInt("number"));
-			//season.setSeries(series);
-			//TODO set a series object 
+			season.setSeries(seriesDao.searchSeries(rs.getInt("series_id")));
 		}
 		return season;
 	}
