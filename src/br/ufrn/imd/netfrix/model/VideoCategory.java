@@ -1,12 +1,12 @@
 package br.ufrn.imd.netfrix.model;
 
-public class Video_Category {
+public class VideoCategory {
 	private Video video;
 	private Category category;
 	
-	public Video_Category() {}
+	public VideoCategory() {}
 	
-	public Video_Category(Video video, Category category) {
+	public VideoCategory(Video video, Category category) {
 		this.video 		= video;
 		this.category 	= category;
 	}
