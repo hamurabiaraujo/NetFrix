@@ -67,7 +67,7 @@ public class VideoDao {
 	}
 	
 	public static void deleteVideo(int id) throws SQLException, ClassNotFoundException {
-		String query = "DELETE FROM video WHERE id = " + id + ";";
+		String query = "DELETE * FROM video WHERE id = " + id + ";";
 		
 		try {
 			DataBase.dbExecuteUpdate(query);
