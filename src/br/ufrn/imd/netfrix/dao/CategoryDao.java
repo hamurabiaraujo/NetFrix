@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import br.ufrn.imd.netfrix.model.Category;
 import br.ufrn.imd.netfrix.util.DataBase;
 
-public class CategoriesDao {
+public class CategoryDao {
 	public static Category searchCategories(int id) throws SQLException, ClassNotFoundException {
 		String query = "SELECT * FROM categories WHERE id=" + id;
 		
