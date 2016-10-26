@@ -1,12 +1,12 @@
 package br.ufrn.imd.netfrix.model;
 
-public class Favorite_Video {
+public class FavoriteVideo {
 	private Video 	video;
 	private User 	user;
 	
-	public Favorite_Video() {}
+	public FavoriteVideo() {}
 	
-	public Favorite_Video(Video video, User user) {
+	public FavoriteVideo(Video video, User user) {
 		this.video 	= video;
 		this.user 	= user;
 	}

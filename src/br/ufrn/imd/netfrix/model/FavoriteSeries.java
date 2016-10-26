@@ -1,12 +1,12 @@
 package br.ufrn.imd.netfrix.model;
 
-public class Favorite_Series {
+public class FavoriteSeries {
 	private Series series;
 	private User user;
 	
-	public Favorite_Series() {}
+	public FavoriteSeries() {}
 	
-	public Favorite_Series(Series series, User user) {
+	public FavoriteSeries(Series series, User user) {
 		this.series = series;
 		this.user	= user;
 	}
