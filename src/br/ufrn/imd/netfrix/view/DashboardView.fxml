@@ -33,7 +33,7 @@
                   </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Button fx:id="btnAddUser" layoutX="14.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleAddUserClick" styleClass="background" text="Adicionar usuário" AnchorPane.leftAnchor="25.0" />
+                        <Button fx:id="btnManagementUser" layoutX="14.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleManagementUserClick" styleClass="background" text="Gerenciar usuários" AnchorPane.leftAnchor="25.0" />
                      </children>
                   </AnchorPane>
               </items>

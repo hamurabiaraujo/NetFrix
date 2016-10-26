@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 public class DashboardViewController {
 	@FXML
-	private Button btnAddUser;
+	private Button btnManagementUser;
 
 	public DashboardViewController() {
 	}
@@ -33,13 +33,13 @@ public class DashboardViewController {
 		}
 	}
 
-	public void showUserView(Stage stage) {
+	public void showUsersView(Stage stage) {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("view/UserView.fxml"));
-            AnchorPane userView = (AnchorPane) loader.load();
+            loader.setLocation(MainApp.class.getResource("view/UsersView.fxml"));
+            AnchorPane usersView = (AnchorPane) loader.load();
 
-            Scene scene = new Scene(userView);
+            Scene scene = new Scene(usersView);
             stage.setScene(scene);
             stage.show();
         } catch (Exception e) {
@@ -48,7 +48,7 @@ public class DashboardViewController {
 	}
 
 	@FXML
-	private void handleAddUserClick() throws ClassNotFoundException, SQLException {
-	    showUserView(new Stage());
+	private void handleManagementUserClick() throws ClassNotFoundException, SQLException {
+	    showUsersView(new Stage());
 	}
 }
