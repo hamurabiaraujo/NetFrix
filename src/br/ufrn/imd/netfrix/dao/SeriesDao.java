@@ -45,7 +45,7 @@ public class SeriesDao {
 	}
 	
 	public static void deleteSeries(int id) throws SQLException, ClassNotFoundException {
-		String query = "DELETE FROM series WHERE id = " + id + ";";
+		String query = "DELETE * FROM series WHERE id = " + id + ";";
 		
 		try {
 			DataBase.dbExecuteUpdate(query);

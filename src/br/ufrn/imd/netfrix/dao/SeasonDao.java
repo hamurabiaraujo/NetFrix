@@ -48,7 +48,7 @@ public class SeasonDao {
 	}
 	
 	public static void deleteSeason(int id) throws SQLException, ClassNotFoundException {
-		String query = "DELETE FROM season WHERE id = " + id + ";";
+		String query = "DELETE * FROM season WHERE id = " + id + ";";
 		
 		try {
 			DataBase.dbExecuteUpdate(query);
