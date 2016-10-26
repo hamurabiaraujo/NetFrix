@@ -7,6 +7,18 @@ import br.ufrn.imd.netfrix.model.User;
 import br.ufrn.imd.netfrix.util.DataBase;
 
 public class UserDao {
+	public static ResultSet getUsers() throws SQLException, ClassNotFoundException {
+		String query = "SELECT * FROM users";
+		
+		try {
+			ResultSet rs = DataBase.dbExecuteQuery(query);
+			return rs;
+		} catch (SQLException e) {
+			System.out.println("While getting users, an error occurred: " + e);
+			throw e;
+		}
+	}
+	
 	public static User findUser(int id) throws SQLException, ClassNotFoundException {
 		String query = "SELECT * FROM users WHERE id=" + id;
 		
