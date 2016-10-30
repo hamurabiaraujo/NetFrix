@@ -25,12 +25,12 @@ public class VideoCategoryDao {
 	private static VideoCategory getVideoCategoryFromResultSet(ResultSet rs) throws SQLException, ClassNotFoundException {
 		VideoCategory videoCategory = null;
 		VideoDao videoDao = new VideoDao();
-		CategoryDao categoryDao = new CategoryDao();
+		CategoriesDao categoriesDao = new CategoriesDao();
 		
 		if (rs.next()) {
 			videoCategory = new VideoCategory();
 			videoCategory.setVideo(videoDao.searchVideo(rs.getInt("video_id")));
-			videoCategory.setCategory(categoryDao.searchCategories(rs.getInt("category_id")));
+			videoCategory.setCategory(categoriesDao.searchCategories(rs.getInt("category_id")));
 		}
 		
 		return videoCategory;
