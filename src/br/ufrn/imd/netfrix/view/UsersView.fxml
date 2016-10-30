@@ -49,9 +49,9 @@
                         <Label fx:id="isAdminLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                      </children>
                   </GridPane>
-                  <Button layoutX="255.0" layoutY="254.0" mnemonicParsing="false" text="Remover" />
-                  <Button layoutX="181.0" layoutY="254.0" mnemonicParsing="false" text="Editar" />
-                  <Button layoutX="17.0" layoutY="252.0" mnemonicParsing="false" text="Novo" />
+                  <Button layoutX="255.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleRemoveUserClick" text="Remover" />
+                  <Button layoutX="181.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleEditUserClick" text="Editar" />
+                  <Button fx:id="btnNew" layoutX="17.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleNewUserClick" text="Novo" />
                </children>
             </AnchorPane>
         </items>

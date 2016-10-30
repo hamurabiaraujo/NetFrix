@@ -50,11 +50,11 @@ public class UserDao {
 	
 	public static void updateUser(User user) throws SQLException, ClassNotFoundException {
 		String query = "UPDATE users SET" +
-					   " name = " + user.getName() +
-					   ", email = " + user.getEmail() +
-					   ", date_of_birth = " + new java.sql.Date(user.getDateOfBirth().getTime()) +
+					   " name = '" + user.getName() + "'" +
+					   ", email = '" + user.getEmail() + "'" +
+					   ", date_of_birth = '" + new java.sql.Date(user.getDateOfBirth().getTime()) + "'" +
 					   ", is_admin = " + user.getIsAdmin() +
-					   ", password = " + user.getPassword() +
+					   ", password = '" + user.getPassword() + "'" +
 					   " WHERE id = " + user.getId() + ";";
 		
 		try	{

@@ -4,6 +4,7 @@ import java.util.Date;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
@@ -19,6 +20,21 @@ public class User {
 	private ObjectProperty<Date> dateOfBirth;
 	
 	public User() {}
+	
+	public User(
+			Integer id,
+			String email,
+			String password,
+			String name,
+			Boolean isAdmin,
+			Date dateOfBirth ) {
+		this.id = new SimpleIntegerProperty(id);
+		this.email = new SimpleStringProperty(email);
+		this.password = new SimpleStringProperty(password);
+		this.name = new SimpleStringProperty(name);
+		this.isAdmin = new SimpleBooleanProperty(isAdmin);
+		this.dateOfBirth = new SimpleObjectProperty<Date>(dateOfBirth);
+	}
 	
 	public User(
 			String email,

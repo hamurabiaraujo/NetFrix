@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="400.0" maxWidth="300.0" minHeight="400.0" minWidth="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrn.imd.netfrix.view.UserViewController">
    <children>
-      <Label layoutX="43.0" layoutY="22.0" styleClass="header" text="Adicionar Usuário" textAlignment="CENTER" />
+      <Label layoutX="101.0" layoutY="22.0" styleClass="header" text="Usuário" textAlignment="CENTER" />
       <TextField fx:id="txtName" focusTraversable="false" layoutX="14.0" layoutY="70.0" promptText="Nome do usuário" styleClass="text-field" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
       <TextField fx:id="txtEmail" focusTraversable="false" layoutX="15.0" layoutY="119.0" promptText="E-mail do usuário" styleClass="text-field" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="119.0" />
       <PasswordField fx:id="txtPassword" focusTraversable="false" layoutX="15.0" layoutY="167.0" promptText="Senha do usuário" styleClass="text-field" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
